@@ -14,7 +14,8 @@
      <c:redirect url = "login"/> 
    </div> 
  </c:if> 
- <%@ include file="AdminNavBar.jsp"%> 
+ <%@ include file="AdminNavBar.jsp"%>
+  <%--  <%@ include file="ClientNavBar.jsp"%> --%>
  <%@ include file="footer.jsp"%> 
 </body>
 </html>

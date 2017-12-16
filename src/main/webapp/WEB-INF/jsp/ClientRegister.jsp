@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
@@ -28,7 +28,7 @@
  </c:if> 
 	<%@ include file="AdminNavBar.jsp"%> 
 	<div class="container" style="margin-bottom: 19px">
-		<h1 class="well">Product Manager Register</h1>
+		<h1 class="well" style="color: #ff0000">Product Manager Register</h1>
 		<div class="col-lg-12 well">
 			<div class="row">
                 <c:if test="${not empty registrationSuccess}">
@@ -57,7 +57,7 @@
 								<h6 style="color:red;"><p id="validresult2"></p></h6>
 							</div>
 							</div>
-							<hr>
+							
 							<div class="row">
 							<div class="col-sm-6 form-group">
 								<form:label path="firstName">First Name</form:label>
@@ -74,7 +74,7 @@
 								<h6 style="color:red;"><p id="validresult3"></p></h6>
 							</div>
 						</div>
-						<hr>
+						
 							<div class="row">
 							<div class="col-sm-6 form-group">
 								<form:label path="password">Password</form:label>
@@ -88,11 +88,11 @@
 									placeholder="********" class="form-control" id="confirmpass" />
 							</div>
 						</div>
-						<hr>
-						<div>
+						<%--<hr>
+						 <div>
 							<center>Billing Address</center>
 						</div>
-						<div class="form-group">
+ --%>						<div class="form-group">
 							<form:label path="address">Address</form:label>
 							<form:textarea type="text" placeholder="Enter  Address.."
 								class="form-control" path="address" id="address"></form:textarea>

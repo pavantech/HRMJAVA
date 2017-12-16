@@ -30,7 +30,7 @@ import com.jpsoftech.repo.ClientRegisterRepo;
 public class HomeController {
 	@Autowired
 	ClientRegisterRepo clientRegisterRepo;
-	@RequestMapping({ "/", "/index" })
+	@RequestMapping({ "/", "/index.html" })
 	public ModelAndView sayIndex() {
 		System.out.println("Admin Panel");
 		return new ModelAndView("index");
@@ -44,7 +44,7 @@ public class HomeController {
 			return new ModelAndView("contactUs");
 		List<ClientRegister> productmanagerlist = clientRegisterRepo.findByemailIdAndPassword(query.getUsername(),
 				query.getPassword());
-		if (query.getUsername().equals("pavan@gmail.com") && query.getPassword().equals("pavan2727")) {
+		if (query.getUsername().equals("raja") && query.getPassword().equals("raja")) {
 			session.setAttribute("username", query.getUsername());
 			model.addAttribute("querySuccess",
 					"Thank you, Your Message stored in our Server we will contact through corresponding Mail");
